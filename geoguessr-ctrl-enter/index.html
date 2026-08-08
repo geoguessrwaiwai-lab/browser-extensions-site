@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NR3K4XBC');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="GeoGuessrの対戦中チャットをControl+EnterまたはCommand+Enterで送信できるChrome拡張機能です。">
+    <title>GeoGuessr Ctrl+Enter Chat</title>
+    <link rel="canonical" href="https://app.geoguessr-waiwai.workers.dev/geoguessr-ctrl-enter/">
+    <link rel="alternate" hreflang="ja" href="https://app.geoguessr-waiwai.workers.dev/geoguessr-ctrl-enter/">
+    <link rel="alternate" hreflang="en" href="https://app.geoguessr-waiwai.workers.dev/geoguessr-ctrl-enter/en/">
+    <link rel="alternate" hreflang="x-default" href="https://app.geoguessr-waiwai.workers.dev/geoguessr-ctrl-enter/">
+    <link rel="icon" type="image/png" sizes="32x32" href="/geoguessr-ctrl-enter/favicon.png">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/geoguessr-ctrl-enter/styles.css">
+    <script src="/geoguessr-ctrl-enter/comparison.js" defer></script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NR3K4XBC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="site-header">
+      <a class="brand" href="/geoguessr-ctrl-enter/">GeoGuessr Ctrl+Enter Chat</a>
+      <div class="header-actions">
+        <nav aria-label="メインナビゲーション">
+          <a href="/">拡張機能一覧</a>
+          <a aria-current="page" href="/geoguessr-ctrl-enter/">機能</a>
+          <a href="/geoguessr-ctrl-enter/privacy/">プライバシー</a>
+          <a href="/geoguessr-ctrl-enter/contact/">お問い合わせ</a>
+        </nav>
+        <a class="header-install-button" href="https://chromewebstore.google.com/detail/lkemfhnkoiicmidagaajpcodidmjnbpm?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">インストール</a>
+        <nav class="language-switcher" aria-label="言語選択"><a aria-current="page" href="/geoguessr-ctrl-enter/" lang="ja">日本語</a><a href="/geoguessr-ctrl-enter/en/" lang="en">English</a></nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="demo-section" aria-labelledby="demo-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">DEMO</p>
+            <h2 id="demo-title">デモ動画</h2>
+            <p class="demo-intro">GeoGuessrの対戦中チャットで、Enter単体による送信を防ぎます。<br>日本語の変換を確定したときも、メッセージは送信されません。</p>
+          </div>
+        </div>
+        <div class="shortcuts" aria-label="送信ショートカット">
+          <span class="key">Control</span><span>＋</span><span class="key">Enter</span>
+          <span class="or">または</span>
+          <span class="key">⌘ Command</span><span>＋</span><span class="key">Enter</span>
+        </div>
+        <div class="comparison-grid">
+          <article class="comparison-card comparison-card-before">
+            <div class="comparison-heading">
+              <span class="comparison-badge">拡張機能なし</span>
+              <h3>変換を確定しただけなのに送信</h3>
+            </div>
+            <video autoplay muted playsinline preload="metadata" poster="/geoguessr-ctrl-enter/assets/before-poster.jpg" data-comparison-video aria-label="拡張機能がない場合、変換確定時にチャットが誤送信される様子">
+              <source src="/geoguessr-ctrl-enter/assets/before.mp4" type="video/mp4">
+              お使いのブラウザは動画の再生に対応していません。
+            </video>
+          </article>
+          <article class="comparison-card comparison-card-after">
+            <div class="comparison-heading">
+              <span class="comparison-badge">拡張機能あり</span>
+              <h3>変換中は送信せず、意図したときだけ</h3>
+            </div>
+            <video autoplay muted playsinline preload="metadata" poster="/geoguessr-ctrl-enter/assets/after-poster.jpg" data-comparison-video aria-label="拡張機能がある場合、日本語の変換中には送信されない様子">
+              <source src="/geoguessr-ctrl-enter/assets/after.mp4" type="video/mp4">
+              お使いのブラウザは動画の再生に対応していません。
+            </video>
+          </article>
+        </div>
+      </section>
+
+      <section class="usage" id="install">
+        <h2>インストール方法</h2>
+        <p>Chrome ウェブストアから、すぐにインストールできます。</p>
+        <ol>
+          <li>下のボタンからChrome ウェブストアを開きます。</li>
+          <li>「Chromeに追加」を選びます。</li>
+          <li>GeoGuessrのページを再読み込みすれば完了です。</li>
+        </ol>
+        <a class="button" href="https://chromewebstore.google.com/detail/lkemfhnkoiicmidagaajpcodidmjnbpm?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">Chrome ウェブストアからインストール</a>
+      </section>
+
+      <section>
+        <h2>データを収集しません</h2>
+        <p>
+          チャット本文やキー入力内容を収集、記録、保存、外部送信しません。
+          詳細は<a href="/geoguessr-ctrl-enter/privacy/">プライバシーポリシー</a>をご覧ください。
+        </p>
+      </section>
+
+      <section>
+        <h2>ソースコードを公開しています</h2>
+        <p>拡張機能の動作を確認できるよう、ソースコードをGitHubで公開しています。</p>
+        <a class="button" href="https://github.com/geoguessrwaiwai-lab/geoguessr-ctrl-enter" target="_blank" rel="noopener noreferrer">GitHubでソースコードを見る</a>
+      </section>
+    </main>
+
+    <footer>
+      <span>GeoGuessr Ctrl+Enter Chat</span>
+      <a href="/">他の拡張機能も見る</a>
+    </footer>
+  </body>
+</html>

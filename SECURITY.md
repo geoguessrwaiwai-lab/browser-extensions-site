@@ -1,0 +1,5 @@
+# セキュリティポリシー
+
+セキュリティ上の問題は、公開IssueではなくGitHubのPrivate vulnerability reportingから報告してください。
+
+このサイトは静的ファイルとGoogle Tag Managerコンテナ`GTM-NR3K4XBC`で構成します。Google Tag Manager以外の外部JavaScriptやフォームによるデータ収集は使用しません。タグ構成を変更する場合は、公開前に通信先とプライバシーポリシーの整合性を確認します。

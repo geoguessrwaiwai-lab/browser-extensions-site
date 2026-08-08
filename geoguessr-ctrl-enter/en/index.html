@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NR3K4XBC');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Chrome extension that sends GeoGuessr chat messages with Control+Enter or Command+Enter instead of Enter alone.">
+    <title>GeoGuessr Ctrl+Enter Chat</title>
+    <link rel="canonical" href="https://app.geoguessr-waiwai.workers.dev/geoguessr-ctrl-enter/en/">
+    <link rel="alternate" hreflang="ja" href="https://app.geoguessr-waiwai.workers.dev/geoguessr-ctrl-enter/">
+    <link rel="alternate" hreflang="en" href="https://app.geoguessr-waiwai.workers.dev/geoguessr-ctrl-enter/en/">
+    <link rel="alternate" hreflang="x-default" href="https://app.geoguessr-waiwai.workers.dev/geoguessr-ctrl-enter/">
+    <link rel="icon" type="image/png" sizes="32x32" href="/geoguessr-ctrl-enter/favicon.png">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/geoguessr-ctrl-enter/styles.css">
+    <script src="/geoguessr-ctrl-enter/comparison.js" defer></script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NR3K4XBC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="site-header">
+      <a class="brand" href="/geoguessr-ctrl-enter/en/">GeoGuessr Ctrl+Enter Chat</a>
+      <div class="header-actions">
+        <nav aria-label="Main navigation">
+          <a href="/en/">All extensions</a>
+          <a aria-current="page" href="/geoguessr-ctrl-enter/en/">Features</a>
+          <a href="/geoguessr-ctrl-enter/en/privacy/">Privacy</a>
+          <a href="/geoguessr-ctrl-enter/en/contact/">Contact</a>
+        </nav>
+        <a class="header-install-button" href="https://chromewebstore.google.com/detail/lkemfhnkoiicmidagaajpcodidmjnbpm?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">Install</a>
+        <nav class="language-switcher" aria-label="Language selection"><a href="/geoguessr-ctrl-enter/" lang="ja">日本語</a><a aria-current="page" href="/geoguessr-ctrl-enter/en/" lang="en">English</a></nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="demo-section" aria-labelledby="demo-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">DEMO</p>
+            <h2 id="demo-title">Demo video</h2>
+            <p class="demo-intro">Prevent Enter alone from sending messages in GeoGuessr match chat.<br>Confirming Japanese text conversion will no longer send your message either.</p>
+          </div>
+        </div>
+        <div class="shortcuts" aria-label="Send shortcuts">
+          <span class="key">Control</span><span>＋</span><span class="key">Enter</span>
+          <span class="or">or</span>
+          <span class="key">⌘ Command</span><span>＋</span><span class="key">Enter</span>
+        </div>
+        <div class="comparison-grid">
+          <article class="comparison-card comparison-card-before">
+            <div class="comparison-heading">
+              <span class="comparison-badge">Without the extension</span>
+              <h3>Confirming text conversion sends the message</h3>
+            </div>
+            <video autoplay muted playsinline preload="metadata" poster="/geoguessr-ctrl-enter/assets/before-poster.jpg" data-comparison-video aria-label="Chat message being sent accidentally while confirming Japanese text conversion without the extension">
+              <source src="/geoguessr-ctrl-enter/assets/before.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </article>
+          <article class="comparison-card comparison-card-after">
+            <div class="comparison-heading">
+              <span class="comparison-badge">With the extension</span>
+              <h3>Convert text safely and send only when intended</h3>
+            </div>
+            <video autoplay muted playsinline preload="metadata" poster="/geoguessr-ctrl-enter/assets/after-poster.jpg" data-comparison-video aria-label="Japanese text conversion completing without sending the chat message while the extension is enabled">
+              <source src="/geoguessr-ctrl-enter/assets/after.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </article>
+        </div>
+      </section>
+
+      <section class="usage" id="install">
+        <h2>Installation</h2>
+        <p>Install the extension directly from the Chrome Web Store.</p>
+        <ol>
+          <li>Open the Chrome Web Store using the button below.</li>
+          <li>Select “Add to Chrome.”</li>
+          <li>Reload the GeoGuessr page to finish.</li>
+        </ol>
+        <a class="button" href="https://chromewebstore.google.com/detail/lkemfhnkoiicmidagaajpcodidmjnbpm?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">Install from the Chrome Web Store</a>
+      </section>
+
+      <section>
+        <h2>No data collection</h2>
+        <p>
+          The extension does not collect, record, store, or transmit chat messages or keystrokes.
+          See the <a href="/geoguessr-ctrl-enter/en/privacy/">privacy policy</a> for details.
+        </p>
+      </section>
+
+      <section>
+        <h2>Open source</h2>
+        <p>The source code is available on GitHub so you can inspect how the extension works.</p>
+        <a class="button" href="https://github.com/geoguessrwaiwai-lab/geoguessr-ctrl-enter" target="_blank" rel="noopener noreferrer">View the source code on GitHub</a>
+      </section>
+    </main>
+
+    <footer>
+      <span>GeoGuessr Ctrl+Enter Chat</span>
+      <a href="/en/">Explore other extensions</a>
+    </footer>
+  </body>
+</html>
