@@ -10,7 +10,7 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A Chrome extension that sends GeoGuessr chat messages with Control+Enter or Command+Enter instead of Enter alone.">
+    <meta name="description" content="Prevent accidental GeoGuessr chat sends and make Enter and Space fast travel safer in Moving mode.">
     <title>GeoGuessr Ctrl+Enter Chat</title>
     <link rel="canonical" href="https://app.geoguessr-waiwai.workers.dev/geoguessr-ctrl-enter/en/">
     <link rel="alternate" hreflang="ja" href="https://app.geoguessr-waiwai.workers.dev/geoguessr-ctrl-enter/">
@@ -74,6 +74,22 @@
               <source src="/geoguessr-ctrl-enter/assets/after.mp4" type="video/mp4">
               Your browser does not support video playback.
             </video>
+          </article>
+        </div>
+      </section>
+
+      <section class="fast-move" aria-labelledby="fast-move-title">
+        <p class="eyebrow">VERSION 1.0.3</p>
+        <h2 id="fast-move-title">Better fast travel in Moving mode</h2>
+        <p class="fast-move-intro">Click a Street View movement arrow once to focus it, then hold Enter or Space to fast travel.</p>
+        <div class="fast-move-grid">
+          <article class="fast-move-card">
+            <h3>Hold <span class="key">Enter</span></h3>
+            <p>Continuously activate the movement arrow without opening chat, so you can keep chat enabled while fast traveling.</p>
+          </article>
+          <article class="fast-move-card">
+            <h3>Hold <span class="key">Space</span></h3>
+            <p>Releasing Space after fast travel will not submit your guess. Space still submits normally when a movement arrow was not focused as the key press began.</p>
           </article>
         </div>
       </section>

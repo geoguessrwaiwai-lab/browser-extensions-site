@@ -207,6 +207,8 @@ assert(
 
 const ctrlEnterHtml = fs.readFileSync("geoguessr-ctrl-enter/index.html", "utf8");
 const ctrlEnterEnglishHtml = fs.readFileSync("geoguessr-ctrl-enter/en/index.html", "utf8");
+const ctrlEnterPrivacyHtml = fs.readFileSync("geoguessr-ctrl-enter/privacy/index.html", "utf8");
+const ctrlEnterEnglishPrivacyHtml = fs.readFileSync("geoguessr-ctrl-enter/en/privacy/index.html", "utf8");
 const mapToolsHtml = fs.readFileSync("map-making-app-tools/index.html", "utf8");
 const MAP_TOOLS_STORE_URL = "https://chromewebstore.google.com/detail/flhepjgbbcielemfkkkfimcfhgfomofj?utm_source=item-share-cb";
 for (const sharedCopy of [
@@ -236,6 +238,18 @@ for (const [name, html] of [
   assert(externalButtons.every((link) => link.includes('target="_blank"') && link.includes('rel="noopener noreferrer"')), `${name} external action buttons must open safely in a new tab`);
 }
 assert(ctrlEnterEnglishHtml.includes('<h2 id="demo-title">Demo video</h2>'), "English Ctrl+Enter page must use the matching demo heading");
+assert(ctrlEnterHtml.includes('<p class="eyebrow">VERSION 1.0.3</p>'), "Ctrl+Enter page must identify the 1.0.3 fast-move update");
+assert(ctrlEnterHtml.includes("Movingモードの高速移動も快適に"), "Ctrl+Enter page must describe Moving fast travel");
+assert(ctrlEnterHtml.includes("移動矢印にフォーカスせずSpaceを押した場合は、従来どおり確定できます。"), "Ctrl+Enter page must preserve normal Space guess submission");
+assert(ctrlEnterEnglishHtml.includes('<p class="eyebrow">VERSION 1.0.3</p>'), "English Ctrl+Enter page must identify the 1.0.3 fast-move update");
+assert(ctrlEnterEnglishHtml.includes("Better fast travel in Moving mode"), "English Ctrl+Enter page must describe Moving fast travel");
+assert(ctrlEnterEnglishHtml.includes("Space still submits normally when a movement arrow was not focused"), "English Ctrl+Enter page must preserve normal Space guess submission");
+assert(rootHtml.includes("MovingのEnter・Space高速移動にも対応します。"), "root Ctrl+Enter card must mention Moving fast travel");
+assert(englishRootHtml.includes("improve Enter and Space fast travel in Moving mode"), "English root Ctrl+Enter card must mention Moving fast travel");
+assert(ctrlEnterPrivacyHtml.includes("Enter、\n        Space、Control+Enter"), "Ctrl+Enter privacy policy must disclose Space key processing");
+assert(ctrlEnterPrivacyHtml.includes("最終更新日: 2026年8月8日"), "Ctrl+Enter privacy policy must use the 1.0.3 update date");
+assert(ctrlEnterEnglishPrivacyHtml.includes("Enter, Space,"), "English Ctrl+Enter privacy policy must disclose Space key processing");
+assert(ctrlEnterEnglishPrivacyHtml.includes("Last updated: August 8, 2026"), "English Ctrl+Enter privacy policy must use the 1.0.3 update date");
 
 for (const [name, html] of [
   ["Ctrl+Enter", ctrlEnterHtml],
