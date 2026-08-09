@@ -302,6 +302,18 @@ h3 { margin-top: 0; line-height: 1.4; }
 .contact { max-width: 760px; min-height: 65vh; }
 .contact p { color: #b4cbdf; font-size: 1.2rem; }
 .contact-link { font-weight: 800; white-space: nowrap; }
+.contact .review-callout {
+  margin-top: 48px;
+  padding: 20px 22px;
+  border: 1px solid rgb(97 226 231 / 28%);
+  border-left: 4px solid #61e2e7;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgb(97 226 231 / 10%), rgb(3 21 54 / 75%));
+  box-shadow: 0 16px 40px rgb(0 0 0 / 18%);
+  font-size: 1.05rem;
+}
+.review-callout::before { margin-right: .5em; color: #facc15; content: "★"; }
+.review-callout .contact-link { color: #61e2e7; text-decoration-thickness: 2px; text-underline-offset: 4px; }
 .button {
   display: inline-block;
   margin-top: 20px;
