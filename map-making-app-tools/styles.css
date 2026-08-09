@@ -274,6 +274,18 @@ h3 { margin: 0; line-height: 1.35; }
 .contact > p:not(.eyebrow) { margin-top: 24px; color: #acbbcb; font-size: 1.2rem; }
 .contact-link { margin-left: .3em; font-weight: 800; white-space: nowrap; }
 .contact-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+.contact > .review-callout {
+  margin-top: 48px;
+  padding: 20px 22px;
+  border: 1px solid rgb(103 232 249 / 28%);
+  border-left: 4px solid #67e8f9;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgb(103 232 249 / 10%), rgb(8 17 31 / 75%));
+  box-shadow: 0 16px 40px rgb(0 0 0 / 18%);
+  font-size: 1.05rem;
+}
+.review-callout::before { margin-right: .5em; color: #facc15; content: "★"; }
+.review-callout .contact-link { color: #67e8f9; text-decoration-thickness: 2px; text-underline-offset: 4px; }
 
 footer { display: flex; justify-content: space-between; gap: 24px; padding-block: 30px; border-top: 1px solid #26364b; color: #6f8299; font-size: .86rem; }
 footer a { color: #92a3b8; text-underline-offset: 4px; }
