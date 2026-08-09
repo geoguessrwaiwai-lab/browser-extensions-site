@@ -280,12 +280,12 @@ for (const [name, html] of [
 assert(mapToolsEnglishHtml.includes('<h2 id="demo-title">Demo video</h2>'), "English Map Making App Tools page must use the matching demo heading");
 assert(!mapToolsHtml.includes('class="range-card"'), "Map Making App Tools must not show the width range card");
 assert(!mapToolsEnglishHtml.includes('class="range-card"'), "English Map Making App Tools must not show the width range card");
-assert((mapToolsHtml.match(/class="demo-feature"/g) ?? []).length === 3, "Map Making App Tools must show all three vertically separated features");
-assert((mapToolsEnglishHtml.match(/class="demo-feature"/g) ?? []).length === 3, "English Map Making App Tools must show all three vertically separated features");
+assert((mapToolsHtml.match(/class="demo-feature"/g) ?? []).length === 2, "Map Making App Tools must show its two published features");
+assert((mapToolsEnglishHtml.match(/class="demo-feature"/g) ?? []).length === 2, "English Map Making App Tools must show its two published features");
 assert((mapToolsHtml.match(/resizable-editor-demo\.mp4/g) ?? []).length === 1, "screen width adjustment must keep its dedicated demo");
 assert((mapToolsHtml.match(/pochipochi-mode-demo\.mp4/g) ?? []).length === 1, "Pochi-pochi mode must use the converted sample-2 demo");
-assert(mapToolsHtml.includes("<span>機能③</span><h3>タグのグループ化</h3>"), "Map Making App Tools must describe tag grouping as feature 3");
-assert(mapToolsEnglishHtml.includes("<span>Feature 3</span><h3>Tag groups</h3>"), "English Map Making App Tools must describe tag grouping as feature 3");
+assert(!mapToolsHtml.includes("タグのグループ化"), "Map Making App Tools must not advertise unpublished tag grouping");
+assert(!mapToolsEnglishHtml.includes("Tag groups"), "English Map Making App Tools must not advertise unpublished tag grouping");
 assert(/id="demo-title">デモ動画<\/h2>[\s\S]*?class="shortcuts"[\s\S]*?class="comparison-grid"/.test(ctrlEnterHtml), "Ctrl+Enter shortcuts must appear below the demo heading and above the videos");
 assert(/id="demo-title">Demo video<\/h2>[\s\S]*?class="shortcuts"[\s\S]*?class="comparison-grid"/.test(ctrlEnterEnglishHtml), "English Ctrl+Enter shortcuts must appear below the demo heading and above the videos");
 assert(ctrlEnterHtml.includes("GeoGuessrの対戦中チャットで、Enter単体による送信を防ぎます。"), "Ctrl+Enter demo must include the requested explanation");
