@@ -139,7 +139,8 @@ h3 { margin: 0; line-height: 1.35; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 32px; }
 .section-heading > p { max-width: 390px; margin: 0; color: #92a3b8; }
 
-.demo-video-frame {
+.demo-video-frame,
+.demo-image-frame {
   overflow: hidden;
   border: 1px solid #2a3b51;
   border-radius: 20px;
@@ -153,6 +154,13 @@ h3 { margin: 0; line-height: 1.35; }
   aspect-ratio: 1280 / 708;
   background: #252521;
   object-fit: contain;
+}
+
+.demo-image-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #252521;
 }
 
 .demo-feature-list {
