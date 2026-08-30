@@ -47,7 +47,10 @@ const REQUIRED_FILES = [
   "map-making-app-tools/styles.css",
   "map-making-app-tools/favicon.png",
   "map-making-app-tools/assets/resizable-editor-demo.mp4",
-  "map-making-app-tools/assets/resizable-editor-demo-poster.jpg"
+  "map-making-app-tools/assets/resizable-editor-demo-poster.jpg",
+  "map-making-app-tools/assets/folder-view.png",
+  "map-making-app-tools/assets/settings.png",
+  "map-making-app-tools/assets/settings-folder-view.png"
 ];
 
 function assert(condition, message) {
@@ -280,10 +283,14 @@ for (const [name, html] of [
 assert(mapToolsEnglishHtml.includes('<h2 id="demo-title">Demo video</h2>'), "English Map Making App Tools page must use the matching demo heading");
 assert(!mapToolsHtml.includes('class="range-card"'), "Map Making App Tools must not show the width range card");
 assert(!mapToolsEnglishHtml.includes('class="range-card"'), "English Map Making App Tools must not show the width range card");
-assert((mapToolsHtml.match(/class="demo-feature"/g) ?? []).length === 2, "Map Making App Tools must show its two published features");
-assert((mapToolsEnglishHtml.match(/class="demo-feature"/g) ?? []).length === 2, "English Map Making App Tools must show its two published features");
+assert((mapToolsHtml.match(/class="demo-feature"/g) ?? []).length === 3, "Map Making App Tools must show its three published features");
+assert((mapToolsEnglishHtml.match(/class="demo-feature"/g) ?? []).length === 3, "English Map Making App Tools must show its three published features");
 assert((mapToolsHtml.match(/resizable-editor-demo\.mp4/g) ?? []).length === 1, "screen width adjustment must keep its dedicated demo");
 assert((mapToolsHtml.match(/pochipochi-mode-demo\.mp4/g) ?? []).length === 1, "Pochi-pochi mode must use the converted sample-2 demo");
+assert((mapToolsHtml.match(/assets\/folder-view\.png/g) ?? []).length === 1, "folder view must keep its dedicated screenshot");
+assert((mapToolsEnglishHtml.match(/assets\/folder-view\.png/g) ?? []).length === 1, "English folder view must keep its dedicated screenshot");
+assert((mapToolsHtml.match(/assets\/settings-folder-view\.png/g) ?? []).length === 1, "folder view settings must keep their dedicated screenshot");
+assert((mapToolsEnglishHtml.match(/assets\/settings-folder-view\.png/g) ?? []).length === 1, "English folder view settings must keep their dedicated screenshot");
 assert(!mapToolsHtml.includes("タグのグループ化"), "Map Making App Tools must not advertise unpublished tag grouping");
 assert(!mapToolsEnglishHtml.includes("Tag groups"), "English Map Making App Tools must not advertise unpublished tag grouping");
 assert(/id="demo-title">デモ動画<\/h2>[\s\S]*?class="shortcuts"[\s\S]*?class="comparison-grid"/.test(ctrlEnterHtml), "Ctrl+Enter shortcuts must appear below the demo heading and above the videos");

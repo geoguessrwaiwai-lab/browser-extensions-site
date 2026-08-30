@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="cW5iTMxhqX0iA4qkaGmjI2or_jbRSHRYNmD9PM8CvwY">
-    <meta name="description" content="A Chrome extension for adjusting Map Making App screen widths and reviewing locations.">
+    <meta name="description" content="A Chrome extension for adjusting Map Making App screen widths, reviewing locations, and organizing your map list into folders.">
     <meta name="theme-color" content="#08111f">
     <title>Map Making App Tools</title>
     <link rel="canonical" href="https://app.geoguessr-waiwai.workers.dev/map-making-app-tools/en/">
@@ -74,15 +74,21 @@
               </video>
             </div>
           </article>
+          <article class="demo-feature">
+            <div class="demo-feature-heading"><span>Feature 3</span><h3>Folder view</h3><p>Turn the map list on the home page into cards grouped by folder. Organize them with favorites, country chips, and tags, reorder folders and maps by dragging, and switch back to the original list at any time.</p></div>
+            <div class="demo-image-frame">
+              <img src="/map-making-app-tools/assets/folder-view.png" width="2470" height="1532" loading="lazy" decoding="async" alt="Folder view showing the Map Making App home page map list as cards grouped by folder">
+            </div>
+          </article>
         </div>
       </section>
 
       <section class="usage" aria-labelledby="settings-title">
         <h2 id="settings-title">Configure each feature</h2>
         <figure class="settings-preview">
-          <img src="/map-making-app-tools/assets/settings.png" width="1542" height="818" loading="lazy" decoding="async" alt="Map Making App Tools extension settings screen">
+          <img src="/map-making-app-tools/assets/settings.png" width="1520" height="1442" loading="lazy" decoding="async" alt="Map Making App Tools extension settings screen">
         </figure>
-        <p>Use Chrome's extension management page to enable or disable screen width adjustment and Pochi-pochi mode independently.</p>
+        <p>Use Chrome's extension management page to enable or disable screen width adjustment, Pochi-pochi mode, and the folder view independently.</p>
         <ol>
           <li>
             Open the following URL in Chrome.
@@ -98,6 +104,10 @@
           <li>Open “Extension options” and choose the features you want to use.</li>
         </ol>
         <p>On the same page, enable “Default to ON” to start Pochi-pochi mode in the ON state for map URLs without a saved preference. A setting selected on a specific Map Making App URL is saved for that URL and takes priority over the global default. Saved URL preferences can be reviewed and changed in a scrollable list with partial URL search, then reset individually or all at once after confirmation. On page load, the mode turns on automatically once saved locations can be protected safely.</p>
+        <p>For the folder view you can choose the display language (Japanese or English), whether clicking a map name opens a new tab, and whether map cards show location counts and country chip icons. The language can also be switched from the footer on Map Making App, and either place updates both.</p>
+        <figure class="settings-preview">
+          <img src="/map-making-app-tools/assets/settings-folder-view.png" width="1506" height="838" loading="lazy" decoding="async" alt="Folder view behavior settings: open maps in a new tab, show location counts, and show country chip icons">
+        </figure>
       </section>
 
       <section class="usage" id="install">
@@ -114,7 +124,7 @@
       <section>
         <h2>We do not collect data</h2>
         <p>
-          Location and pano IDs are processed only in page memory while the feature runs. Extension-local storage contains only feature preferences, the global default, the target map URL, and its ON/OFF setting; nothing is transmitted externally.
+          Location and pano IDs are processed only in page memory while the feature runs. Extension-local storage contains only feature preferences, the global default, the target map URL and its ON/OFF setting, and the folder view's folders, ordering, favorites, countries, tags, and display language; nothing is transmitted externally.
           See the <a href="/map-making-app-tools/en/privacy/">privacy policy</a> for details.
         </p>
       </section>

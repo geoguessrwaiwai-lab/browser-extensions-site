@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="cW5iTMxhqX0iA4qkaGmjI2or_jbRSHRYNmD9PM8CvwY">
-    <meta name="description" content="Map Making Appの画面幅調整とロケーションの連続確認を支援するChrome拡張機能です。">
+    <meta name="description" content="Map Making Appの画面幅調整、ロケーションの連続確認、マップ一覧のフォルダ整理を支援するChrome拡張機能です。">
     <meta name="theme-color" content="#08111f">
     <title>Map Making App Tools</title>
     <link rel="canonical" href="https://app.geoguessr-waiwai.workers.dev/map-making-app-tools/">
@@ -74,15 +74,21 @@
               </video>
             </div>
           </article>
+          <article class="demo-feature">
+            <div class="demo-feature-heading"><span>機能③</span><h3>フォルダビュー</h3><p>トップページのマップ一覧を、フォルダで分類したカード表示に切り替えます。お気に入り・国チップ・タグで整理でき、フォルダもマップもドラッグで並び替えられます。いつでも元の表示に戻せます。</p></div>
+            <div class="demo-image-frame">
+              <img src="/map-making-app-tools/assets/folder-view.png" width="2470" height="1532" loading="lazy" decoding="async" alt="Map Making Appのトップページのマップ一覧を、フォルダごとにカードでまとめて表示したフォルダビューの画面">
+            </div>
+          </article>
         </div>
       </section>
 
       <section class="usage" aria-labelledby="settings-title">
         <h2 id="settings-title">機能ごとに設定できます</h2>
         <figure class="settings-preview">
-          <img src="/map-making-app-tools/assets/settings.png" width="1542" height="818" loading="lazy" decoding="async" alt="Map Making App Toolsの拡張機能設定画面">
+          <img src="/map-making-app-tools/assets/settings.png" width="1520" height="1442" loading="lazy" decoding="async" alt="Map Making App Toolsの拡張機能設定画面">
         </figure>
-        <p>Chromeの拡張機能管理画面から、画面幅調整とぽちぽちモードを個別にON／OFFできます。</p>
+        <p>Chromeの拡張機能管理画面から、画面幅調整・ぽちぽちモード・フォルダビューを個別にON／OFFできます。</p>
         <ol>
           <li>
             Chromeで次のURLを開きます。
@@ -98,6 +104,10 @@
           <li>「拡張機能のオプション」を開き、使用する機能を切り替えます。</li>
         </ol>
         <p>同じ画面で「ONをデフォルトにする」を有効にすると、URL別設定がまだないマップでは、ぽちぽちモードがONで始まります。Map Making App上で切り替えたURLには専用のON／OFFが保存され、全体のデフォルトより優先されます。保存済みのURL別設定は、スクロール一覧とURLの部分一致検索で確認・変更でき、個別または確認画面から一括で全体デフォルトへ戻せます。ページ読み込み時は、保存済み地点を安全に保護できる状態になってから自動でONになります。</p>
+        <p>フォルダビューでは、表示言語（日本語／English）に加えて、マップ名をクリックしたときに別タブで開くか、マップカードにロケーション数と国チップアイコンを表示するかを設定できます。表示言語はMap Making Appのフッターからも切り替えられ、どちらで変えても両方の表示に反映されます。</p>
+        <figure class="settings-preview">
+          <img src="/map-making-app-tools/assets/settings-folder-view.png" width="1506" height="838" loading="lazy" decoding="async" alt="フォルダビューの動作を設定する画面。マップを別タブで開く、ロケーション数を表示、国チップアイコンを表示の各項目">
+        </figure>
       </section>
 
       <section class="usage" id="install">
@@ -114,7 +124,7 @@
       <section>
         <h2>データを収集しません</h2>
         <p>
-          地点IDやpano IDは機能の判定中だけページ内で処理します。拡張機能専用ストレージには、機能別設定、全体デフォルト、対象のマップURLとURLごとのON／OFF設定だけを保存し、外部へ送信しません。
+          地点IDやpano IDは機能の判定中だけページ内で処理します。拡張機能専用ストレージには、機能別設定、全体デフォルト、対象のマップURLとURLごとのON／OFF設定、フォルダビューのフォルダ構成・並び順・お気に入り・国・タグ・表示言語だけを保存し、外部へ送信しません。
           詳細は<a href="/map-making-app-tools/privacy/">プライバシーポリシー</a>をご覧ください。
         </p>
       </section>
