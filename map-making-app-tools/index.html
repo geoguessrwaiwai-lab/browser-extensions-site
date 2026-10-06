@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="cW5iTMxhqX0iA4qkaGmjI2or_jbRSHRYNmD9PM8CvwY">
-    <meta name="description" content="Map Making Appの画面幅調整、ロケーションの連続確認、マップ一覧のフォルダ整理を支援するChrome拡張機能です。">
+    <meta name="description" content="Map Making Appの画面幅調整、ロケーションの連続確認、マップ一覧のフォルダ整理、タグの色の維持を支援するChrome拡張機能です。">
     <meta name="theme-color" content="#08111f">
     <title>Map Making App Tools</title>
     <link rel="canonical" href="https://app.geoguessr-waiwai.workers.dev/map-making-app-tools/">
@@ -83,12 +83,18 @@
         </div>
       </section>
 
+      <section class="usage" aria-labelledby="tag-color-title">
+        <h2 id="tag-color-title">タグの色をキープ</h2>
+        <p>Map Making Appでタグ名を変更すると、内部的にタグが作り直されるため、名前だけを変えたつもりでも色が初期値へ戻ってしまいます。この機能をONにしておくと、Edit tagの保存時に入力されていた色がそのまま保たれます。</p>
+        <p>Map Making App自身が送るタグ更新リクエストへ色の指定を足して、同じ宛先へ送り直すだけなので、リクエストの本数は増えません。名前と色を同時に変更した場合も、入力したとおりの色になります。タグの削除・並び替え・色だけの変更には介入しません。</p>
+      </section>
+
       <section class="usage" aria-labelledby="settings-title">
         <h2 id="settings-title">機能ごとに設定できます</h2>
         <figure class="settings-preview">
           <img src="/map-making-app-tools/assets/settings.png" width="1520" height="1442" loading="lazy" decoding="async" alt="Map Making App Toolsの拡張機能設定画面">
         </figure>
-        <p>Chromeの拡張機能管理画面から、画面幅調整・ぽちぽちモード・フォルダビューを個別にON／OFFできます。</p>
+        <p>Chromeの拡張機能管理画面から、画面幅調整・ぽちぽちモード・フォルダビュー・タグの色をキープを個別にON／OFFできます。</p>
         <ol>
           <li>
             Chromeで次のURLを開きます。
@@ -124,7 +130,7 @@
       <section>
         <h2>データを収集しません</h2>
         <p>
-          地点IDやpano IDは機能の判定中だけページ内で処理します。拡張機能専用ストレージには、機能別設定、全体デフォルト、対象のマップURLとURLごとのON／OFF設定、フォルダビューのフォルダ構成・並び順・お気に入り・国・タグ・表示言語だけを保存し、外部へ送信しません。
+          地点IDやpano IDは機能の判定中だけページ内で処理します。拡張機能専用ストレージには、機能別設定、全体デフォルト、対象のマップURLとURLごとのON／OFF設定、フォルダビューのフォルダ構成・並び順・お気に入り・国・タグ・表示言語だけを保存し、外部へ送信しません。拡張機能の独自サーバーや第三者への通信はありません。「タグの色をキープ」は、Map Making App自身が送るタグ更新リクエストへ色の指定を足して同じ宛先へ送り直すだけで、新たな送信先もリクエストの追加もありません。
           詳細は<a href="/map-making-app-tools/privacy/">プライバシーポリシー</a>をご覧ください。
         </p>
       </section>
