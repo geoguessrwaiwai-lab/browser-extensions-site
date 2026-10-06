@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="cW5iTMxhqX0iA4qkaGmjI2or_jbRSHRYNmD9PM8CvwY">
-    <meta name="description" content="A Chrome extension for adjusting Map Making App screen widths, reviewing locations, and organizing your map list into folders.">
+    <meta name="description" content="A Chrome extension for adjusting Map Making App screen widths, reviewing locations, organizing your map list into folders, and keeping tag colours.">
     <meta name="theme-color" content="#08111f">
     <title>Map Making App Tools</title>
     <link rel="canonical" href="https://app.geoguessr-waiwai.workers.dev/map-making-app-tools/en/">
@@ -83,12 +83,18 @@
         </div>
       </section>
 
+      <section class="usage" aria-labelledby="tag-color-title">
+        <h2 id="tag-color-title">Keep tag colours</h2>
+        <p>Renaming a tag in Map Making App recreates it internally, so a colour you never touched gets reset to a default. Turn this feature on and the colour shown in the Edit tag form when you save is preserved.</p>
+        <p>It only adds the colour to the tag update request Map Making App itself sends and resends it to that same destination, so it makes no extra request. Change the name and the colour together and you get exactly the colour you entered. Deleting, reordering, and colour-only changes are left untouched.</p>
+      </section>
+
       <section class="usage" aria-labelledby="settings-title">
         <h2 id="settings-title">Configure each feature</h2>
         <figure class="settings-preview">
           <img src="/map-making-app-tools/assets/settings.png" width="1520" height="1442" loading="lazy" decoding="async" alt="Map Making App Tools extension settings screen">
         </figure>
-        <p>Use Chrome's extension management page to enable or disable screen width adjustment, Pochi-pochi mode, and the folder view independently.</p>
+        <p>Use Chrome's extension management page to enable or disable screen width adjustment, Pochi-pochi mode, the folder view, and tag colour keeping independently.</p>
         <ol>
           <li>
             Open the following URL in Chrome.
@@ -124,7 +130,7 @@
       <section>
         <h2>We do not collect data</h2>
         <p>
-          Location and pano IDs are processed only in page memory while the feature runs. Extension-local storage contains only feature preferences, the global default, the target map URL and its ON/OFF setting, and the folder view's folders, ordering, favorites, countries, tags, and display language; nothing is transmitted externally.
+          Location and pano IDs are processed only in page memory while the feature runs. Extension-local storage contains only feature preferences, the global default, the target map URL and its ON/OFF setting, and the folder view's folders, ordering, favorites, countries, tags, and display language; nothing is transmitted externally. The extension uses no servers of its own and sends nothing to third parties. "Keep tag colours" only adds the colour to the tag update request Map Making App itself sends and resends it to that same destination, so there is no new destination and no extra request.
           See the <a href="/map-making-app-tools/en/privacy/">privacy policy</a> for details.
         </p>
       </section>
